@@ -221,8 +221,9 @@ class Cell {
   // EFFECT:
   // floods this cell based on its neighbors
   public void flood(boolean top, boolean edge) {
-
-    if (top) { // if this cell is in the top row
+    
+    // if this cell is in the top row
+    if (top) { 
       if (this.left.flooded && this.left.color.equals(this.color)) {
         this.flooded = true;
       }
